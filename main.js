@@ -48,6 +48,7 @@ function check(toBeMoved, currentPos) {
   let currentTop = parseInt(elevators.style.top) || elevators.offsetTop; // Fallback to offsetTop if not set
 
   console.log("currentTop", currentTop);
+
   if (toBeMoved < currentPos) {
     elevators.style.top = toBeMoved - 220 + "px";
 
