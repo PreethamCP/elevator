@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elevator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="input">
+      <div class="floors">
+        <p>Enter number of floors:</p>
+        <input type="number" id="numFloors" min="1" />
+        <button onclick="getFloors()">Submit</button>
+      </div>
+
+      <div class="liftPosition">
+        <p>Enter floor number</p>
+        <input type="number" id="liftPosition" min="1" />
+        <button onclick="liftPosition()">Submit</button>
+      </div>
+    </div>
+    <div class="output" id="output">
+      <div class="building" id="building"></div>
+      <div class="elevators" id="elevators"></div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>
